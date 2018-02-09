@@ -1,0 +1,11 @@
+{
+  "name": "Starship",
+  "version": "0.0.1",
+  "title": "Starship",
+  "author": "Reika",
+  "contact": "",
+  "homepage": "",
+  "factorio_version" : "0.16",
+  "description": "Your ultimate goal does not end with a simple rocket to orbit; you now seek to build an interstellar ship to take you home.",
+  "dependencies": ["base >= 0.16.0"]
+}
