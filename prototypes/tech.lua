@@ -71,6 +71,15 @@ local function getMaxTierOf(base, suffix)
 				log("Found tier " .. i .. " of '" .. base .. "'")
 				return name
 			end
+			
+			if i == 1 then
+				suff = "-1"
+				name = pre .. base .. suff .. suffix
+				if techExists(name) then
+					log("Found tier " .. i .. " of '" .. base .. "'")
+					return name
+				end
+			end
 		end
 	end
 	error("Could not find any tier for tech '" .. base .. "'!")
