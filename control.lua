@@ -34,6 +34,7 @@ local function getDrydockCompletion(force)
 end
 
 local function initGlobal(markDirty)
+	--[[
 	if remote.interfaces["silo_script"] then
 		remote.call("silo_script", "set_show_launched_without_satellite", false)
 		for item,num in pairs(drydockComponents) do
@@ -43,6 +44,7 @@ local function initGlobal(markDirty)
 			remote.call("silo_script", "add_tracked_item", item)
 		end
 	end
+	--]]
 end
 
 script.on_init(function()
