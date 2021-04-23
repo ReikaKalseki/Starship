@@ -8,10 +8,10 @@ local function createUnit(amt)
 return {
 	  count = amt,
 	  ingredients = {
-		{"science-pack-1", 1},
-		{"science-pack-2", 1},
-		{"science-pack-3", 1},
-		{"high-tech-science-pack", 1},
+		{"automation-science-pack", 1},
+		{"logistic-science-pack", 1},
+		{"chemical-science-pack", 1},
+		{"utility-science-pack", 1},
 		{"space-science-pack", 1},
 	  },
 	  time = 40
@@ -132,7 +132,7 @@ createAndRegisterTech("space-sensors", {"advanced-electronics-2", "rocket-silo"}
 createAndRegisterTech("starship-control-systems", {"space-sensors", "space-travel", getMaxTierOf("advanced-electronics")}, {"control-computer", "thermal-control-unit"}, 750)
 createAndRegisterTech("space-combat", {"space-travel", "military-4"}, {}, 750)
 createAndRegisterTech("ship-shielding", {"space-combat", "interstellar-travel", getMaxTierOf("energy-shield", "-equipment")}, {"shield-emitter"}, 500)
-createAndRegisterTech("space-weaponry", {"space-combat", "artillery-shell-range-7", "starship-control-systems", getTechWithFallback("plasma-turrets", "laser-turrets")}, {"targeting-computer", "forward-gun", "defence-turret"}, 1500)
+createAndRegisterTech("space-weaponry", {"space-combat", "artillery-shell-range-7", "starship-control-systems", getTechWithFallback("plasma-turrets", "laser-turret")}, {"targeting-computer", "forward-gun", "defence-turret"}, 1500)
 createAndRegisterTech("maintenance-bay", {"deep-space-travel", getMaxTierOf("automation")}, {"maintenance-bay"}, 500)
 createAndRegisterTech("cargo-bay", {"deep-space-travel", "electric-engine", getTechWithFallback("bob-robots-4", "logistic-robotics"), "angels-warehouses"}, {"cargo-bay"}, 500)
 createAndRegisterTech("artificial-gravity", {"deep-space-travel", "electric-engine"}, {"habitation-rotator"}, 1500)

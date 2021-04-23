@@ -132,7 +132,7 @@ local function createItem(name)
 		icon = "__Starship__/graphics/icons/" .. name .. ".png",
 		icon_size = 64,
 		order = name,
-		flags = {"goes-to-main-inventory"},
+		flags = {},
 		stack_size = getStackSize(name),
 		subgroup = "starship",
 	}
